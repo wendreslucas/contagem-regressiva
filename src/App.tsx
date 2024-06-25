@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { differenceInSeconds } from "date-fns";
 
 const App = () => {
