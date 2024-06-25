@@ -1,5 +1,6 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { differenceInSeconds } from "date-fns";
+import HamsterWheel from "./components/HamsterWheel";
 
 const App = () => {
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
@@ -55,6 +56,7 @@ const App = () => {
           <span>segundos</span>
         </div>
       </div>
+      <HamsterWheel />
     </div>
   );
 };
