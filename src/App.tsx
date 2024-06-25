@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { differenceInSeconds } from "date-fns";
 import HamsterWheel from "./components/HamsterWheel";
 
-const App = () => {
+const App: React.FC = () => {
   const [timeRemaining, setTimeRemaining] = useState(calculateTimeRemaining());
 
   useEffect(() => {
