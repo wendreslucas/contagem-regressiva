@@ -1,0 +1,16 @@
+export const WeatherIcons = {
+  "01d": "/contagem-regressiva/icons/sunny.svg",
+  "01n": "/contagem-regressiva/icons/night.svg",
+  "02d": "/contagem-regressiva/icons/day.svg",
+  "02n": "/contagem-regressiva/icons/cloudy-night.svg",
+  "03d": "/contagem-regressiva/icons/cloudy.svg",
+  "03n": "/contagem-regressiva/icons/cloudy.svg",
+  "04d": "/contagem-regressiva/icons/perfect-day.svg",
+  "04n": "/contagem-regressiva/icons/cloudy-night.svg",
+  "09d": "/contagem-regressiva/icons/rain.svg",
+  "09n": "/contagem-regressiva/icons/rain-night.svg",
+  "10d": "/contagem-regressiva/icons/rain.svg",
+  "10n": "/contagem-regressiva/icons/rain-night.svg",
+  "11d": "/contagem-regressiva/icons/storm.svg",
+  "11n": "/contagem-regressiva/icons/storm.svg",
+};
