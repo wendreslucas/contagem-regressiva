@@ -24,8 +24,8 @@ const CountdownTimer = () => {
     return { days, hours, minutes, seconds };
   }
   return (
-    <div className="flex flex-col justify-center text-gray-100 text-center font-mono py-20 ">
-      <h1 className="text-4xl font-bold mb-8 ">
+    <div className="flex flex-col justify-center text-gray-100 text-center font-mono pb-10">
+      <h1 className="text-4xl font-bold mb-4 ">
         Contagem Regressiva para 20 de Setembro
       </h1>
       <div className="flex space-x-4 justify-center">
