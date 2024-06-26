@@ -21,7 +21,7 @@ const WeatherComponent = () => {
     fetchWeather();
   }, []);
 
-  const getTime = (time) => {
+  const getTime = (time: string) => {
     const [date, timePart] = time.split(" ");
     return timePart;
   };

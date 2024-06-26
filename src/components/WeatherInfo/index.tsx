@@ -1,17 +1,17 @@
-interface Props {
-  name: string;
-  value: string;
+import {
+  WeatherInfoIconTypes,
+  WeatherInfoIcons,
+} from "../../types/weatherTypes";
+
+interface WeatherInfoComponentProps {
+  name: WeatherInfoIconTypes;
+  value: string | number;
 }
 
-export const WeatherInfoComponent: React.FC<Props> = ({ name, value }) => {
-  const WeatherInfoIcons = {
-    sunset: "../../../public/icons/temp.svg",
-    sunrise: "../../../public/icons/temp.svg",
-    humidity: "../../../public/icons/humidity.svg",
-    wind: "../../../public/icons/wind.svg",
-    pressure: "../../../public/icons/pressure.svg",
-  };
-
+export const WeatherInfoComponent: React.FC<WeatherInfoComponentProps> = ({
+  name,
+  value,
+}) => {
   return (
     <div className="flex flex-row justify-evenly items-center m-2">
       <img className="w-9 h-9" src={WeatherInfoIcons[name]} alt={name} />
