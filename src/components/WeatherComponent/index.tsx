@@ -1,10 +1,11 @@
 import { useState, useEffect } from "react";
 import { getWeather } from "../../api/api";
 import { WeatherInfoComponent } from "../WeatherInfo";
+import { WeatherEntity } from "../../models/WeatherEntity";
 
 const WeatherComponent = () => {
-  const [weather, setWeather] = useState(null);
-  const [error, setError] = useState(null);
+  const [weather, setWeather] = useState<WeatherEntity | null>(null);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     const fetchWeather = async () => {
