@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const apiKey = import.meta.env.VITE_WEATHERAPI_KEY;
-const baseUrl = "http://api.weatherapi.com/v1/current.json";
+const baseUrl = "https://api.weatherapi.com/v1/current.json";
 
 export const getWeather = async () => {
   const city = "Guarulhos";
