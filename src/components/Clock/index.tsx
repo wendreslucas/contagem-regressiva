@@ -24,34 +24,34 @@ const CountdownTimer = () => {
     return { days, hours, minutes, seconds };
   }
   return (
-    <div className="flex flex-col justify-center text-gray-100 text-center font-mono">
+    <div className="flex flex-col justify-center text-gray-100 text-center font-mono py-20 ">
       <h1 className="text-4xl font-bold mb-8 ">
         Contagem Regressiva para 20 de Setembro
       </h1>
-      <div className="flex space-x-4 text-2xl justify-center">
+      <div className="flex space-x-4 justify-center">
         <div className="flex flex-col items-center">
-          <span className="bg-gray-700 p-8 rounded-lg text-5xl">
+          <span className="bg-gray-700 p-4 md:p-8 rounded-lg text-3xl md:text-5xl">
             {timeRemaining.days}
           </span>
-          <span>dias</span>
+          <span className="text-xs md:text-base">dias</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="bg-gray-700 p-8 rounded-lg text-5xl">
+          <span className="bg-gray-700 p-4 md:p-8 rounded-lg text-3xl md:text-5xl">
             {timeRemaining.hours}
           </span>
-          <span>horas</span>
+          <span className="text-xs md:text-base">horas</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="bg-gray-700 p-8 rounded-lg text-5xl">
+          <span className="bg-gray-700 p-4 md:p-8 rounded-lg text-3xl md:text-5xl">
             {timeRemaining.minutes}
           </span>
-          <span>minutos</span>
+          <span className="text-xs md:text-base">minutos</span>
         </div>
         <div className="flex flex-col items-center">
-          <span className="bg-gray-700 p-8 rounded-lg text-5xl">
+          <span className="bg-gray-700 p-4 md:p-8 rounded-lg text-3xl md:text-5xl">
             {timeRemaining.seconds}
           </span>
-          <span>segundos</span>
+          <span className="text-xs md:text-base">segundos</span>
         </div>
       </div>
     </div>
