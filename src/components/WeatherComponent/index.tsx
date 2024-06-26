@@ -22,7 +22,7 @@ const WeatherComponent = () => {
   }, []);
 
   const getTime = (time: string) => {
-    const [date, timePart] = time.split(" ");
+    const [, timePart] = time.split(" ");
     return timePart;
   };
 
